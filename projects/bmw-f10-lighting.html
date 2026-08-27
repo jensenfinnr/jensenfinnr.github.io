@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>F10 Interior Lighting — Finn Jensen</title>
+<meta name="description" content="Custom interior lighting retrofit in a BMW F10: 3D printed mounting points, wired harness, and a dash-integrated switch programmed to control brightness and color.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="shell topbar__in">
+    <a class="mark" href="../">Finn Jensen</a>
+    <nav class="navlinks" aria-label="Sections">
+      <a href="../#projects">All projects</a>
+      <a href="../#about" class="navlinks__hide">About</a>
+      <a href="../#contact">Contact</a>
+      <a href="https://github.com/jensenfinnr" rel="me noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="detail-hero">
+    <div class="shell">
+      <p class="eyebrow">BMW F10 &middot; Electronics retrofit</p>
+      <h1 class="detail-hero__title">F10 Interior<br>Lighting</h1>
+      <div class="dim dim--draw dim--tight">
+        <span class="dim__tick"></span>
+        <span class="dim__rule"></span>
+        <span class="dim__label">Platform: BMW F10</span>
+        <span class="dim__rule"></span>
+        <span class="dim__tick"></span>
+      </div>
+      <p class="lede mt-2">New lighting in an older interior, controlled from a switch that looks like it came with the car.</p>
+    </div>
+  </section>
+
+  <div class="shell detail">
+    <div>
+      <div class="prose">
+        <h2 class="h3-sub">The goal</h2>
+        <p>Bolt-on interior lighting kits are easy to spot: strips stuck to trim, a wire disappearing under a mat, a remote in the glovebox. I wanted the opposite &mdash; light with no visible source, and one control on the dash that a passenger would assume was factory.</p>
+
+        <h2 class="h3-sub">Mechanical</h2>
+        <p>The hard part isn't the LEDs, it's holding them in the right place. I modeled and printed a clip that clamps around the light tube on one side and snaps into existing features in the trim on the other, so every run sits at a fixed angle and throws light onto a surface instead of into your eyes.</p>
+        <p>Printing the clips meant I could revise one, print it that night, and try again &mdash; and it kept the whole install reversible. Nothing is drilled, nothing is glued, and the car can go back to stock.</p>
+
+        <h2 class="h3-sub">Electrical and control</h2>
+        <ul>
+          <li><strong>Bench test first.</strong> Every run got powered up and checked outside the car before a single panel came off. Finding a dead segment on the floor costs minutes; finding it behind a door card costs an evening.</li>
+          <li><strong>Harness.</strong> Wiring routed behind the trim and tied into the car's 12V system at the fuse panel, with connectors at each run so a panel can still come off without cutting.</li>
+          <li><strong>Switch.</strong> A control integrated into the dash rather than an app or a fob. Reach for it without looking.</li>
+          <li><strong>Programming.</strong> I wrote the control logic so the same switch sets both brightness and color, which is the interesting constraint: one physical input, two dimensions of output, and it has to be obvious to use while driving.</li>
+        </ul>
+
+        <h2 class="h3-sub">What it taught me</h2>
+        <p>Retrofit work is mostly a packaging problem. The electronics were straightforward; making them disappear into a car that was designed without them is where the engineering was.</p>
+      </div>
+
+      <h2 class="h3-sub">Photos</h2>
+      <div class="gallery" data-gallery="bmw-f10-lighting"></div>
+    </div>
+
+    <aside class="detail__aside">
+      <div class="plate">
+        <p class="plate__title">Spec sheet</p>
+        <dl class="spec">
+          <div class="spec__row"><dt>Platform</dt><dd>BMW F10</dd></div>
+          <div class="spec__row"><dt>Scope</dt><dd>Interior lighting retrofit, fully reversible</dd></div>
+          <div class="spec__row"><dt>Control</dt><dd>Dash-integrated switch &mdash; brightness and color</dd></div>
+          <div class="spec__row"><dt>Electrical</dt><dd>12V, addressable LED, custom harness</dd></div>
+          <div class="spec__row"><dt>Fabrication</dt><dd>3D printed clamp-style mounting clips</dd></div>
+          <div class="spec__row"><dt>Code</dt><dd>Arduino</dd></div>
+        </dl>
+      </div>
+    </aside>
+  </div>
+
+  <div class="shell">
+    <nav class="pager" aria-label="Project navigation">
+      <a href="airfolio.html">&larr; Airfolio</a>
+      <a href="c4-corvette.html">C4 Corvette &rarr;</a>
+    </nav>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer__in">
+    <span>Finn Jensen &middot; Erie / Pittsburgh, PA</span>
+    <span><a href="mailto:jensenfinnr@gmail.com">jensenfinnr@gmail.com</a></span>
+    <span>&copy; <span data-year>2026</span></span>
+  </div>
+</footer>
+
+<script src="../assets/js/media.js"></script>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
