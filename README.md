@@ -113,6 +113,7 @@ Your phone number is in `index.html` as a commented-out line in the contact sect
 - **Bauhaus.** Navy, white, black, orange, used as flat blocks rather than gradients or shadows. Thick rules, hard corners, no rounding except where a circle is meant to be a circle.
 - **Palette** — navy `#0f2557`, orange `#e85d0d`, black `#111111`, white `#fbfaf7`. All four live at the top of `site.css` as CSS variables, so changing one changes the whole site.
 - **Type** — Jost for headings and labels (a geometric sans in the Futura lineage, which is the Bauhaus typographic instinct), Archivo for reading. Fonts load from Google Fonts; if that fails the page falls back to Futura/Century Gothic and still reads correctly.
+- **Circle, square, triangle** recur as the structural marks — the toolkit groups, the marker rule, the favicon. Flat colour blocks sit offset behind the headshot and every project photo (navy on one row, orange on the next), which is the one bit of depth on the site and comes from `box-shadow` with no blur rather than a real shadow.
 - **The marker rule** is the repeated motif: an orange circle, a navy bar, a label, and a black square. Circle, bar, square — the Bauhaus primitives doing structural work rather than decoration. Every label on one is a real fact.
 - Responsive down to phone width, keyboard-navigable, visible focus rings, and `prefers-reduced-motion` respected.
 
