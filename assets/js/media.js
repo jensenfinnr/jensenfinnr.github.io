@@ -88,9 +88,15 @@ window.PROJECT_MEDIA = {
   ],
 
   "c4-corvette": [
-    { file: "engine-optispark.jpg", wide: true,
+    { file: "driveway-night.jpg", wide: true,
+      caption: "Running again, top down",
+      alt: "Black 1990 Corvette convertible parked in a driveway at night" },
+    { file: "engine-optispark.jpg",
       caption: "Front of the engine opened up to reach the Optispark",
       alt: "Engine bay of a 1990 Corvette partly disassembled at the front of the engine" },
+    { file: "side-profile.jpg",
+      caption: "Side profile",
+      alt: "Side view of the black C4 Corvette with the top down" },
   ],
 
   "design-studies": [
@@ -103,6 +109,24 @@ window.PROJECT_MEDIA = {
     { file: "wire-model-front.jpg",
       caption: "Front three-quarter, where the compromises show",
       alt: "Front three-quarter view of the soldered wire car model" },
+    { file: "hypercar-concept.jpg",
+      caption: "My own concept — low mid-engine hypercar",
+      alt: "Pencil three-quarter drawing of an original low mid-engine hypercar concept" },
+    { file: "concept-sketches.jpg",
+      caption: "Same concept worked out from the front and in three-quarter",
+      alt: "Sketchbook page with front-end studies and two three-quarter views of an original concept" },
+    { file: "interior-study.jpg",
+      caption: "Interior study — wheel, dash, and console in perspective",
+      alt: "Pencil drawing of a car interior showing steering wheel, dashboard, and centre console" },
+    { file: "coupe-studies.jpg",
+      caption: "Studies of cars that already exist, to learn what works",
+      alt: "Sketchbook page of coupe and sedan studies with a large mid-engine sports car below" },
+    { file: "perspective-studies.jpg",
+      caption: "Working on perspective and ground plane",
+      alt: "Loose pencil studies of a low sports car in perspective" },
+    { file: "early-studies.jpg",
+      caption: "Early pages — boxes first, then cars",
+      alt: "Early sketchbook page of simple boxy car forms and a wedge study" },
   ],
 
 };

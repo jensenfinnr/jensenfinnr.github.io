@@ -36,7 +36,7 @@ Open it through a local server, not by double-clicking `index.html` — the gall
 
 ## 2. Photos
 
-22 photos are already in and captioned. To add, remove, or reorder any of them:
+30 photos are already in and captioned, plus a headshot at `assets/images/headshot.jpg` (referenced directly in `index.html`, not through the manifest). To add, remove, or reorder any of them:
 
 **a. Drop the file in the right folder.**
 
@@ -110,9 +110,10 @@ Your phone number is in `index.html` as a commented-out line in the contact sect
 
 ## Design notes
 
-- **Palette** — primer gray-green wall, chalk panels, oxblood signal. Body-shop colors.
-- **Type** — Big Shoulders Display (industrial signage) for headlines, IBM Plex Sans for reading, IBM Plex Mono for anything that behaves like data. Fonts load from Google Fonts; if that ever fails the page falls back to a condensed system stack and still reads fine.
-- **The dimension line** is the one repeated motif — ticks, arrows, and a measurement label. It's there because measuring a car and turning it into a plan is the actual through-line of your work, and every label on it is a real number or a real fact.
+- **Bauhaus.** Navy, white, black, orange, used as flat blocks rather than gradients or shadows. Thick rules, hard corners, no rounding except where a circle is meant to be a circle.
+- **Palette** — navy `#0f2557`, orange `#e85d0d`, black `#111111`, white `#fbfaf7`. All four live at the top of `site.css` as CSS variables, so changing one changes the whole site.
+- **Type** — Jost for headings and labels (a geometric sans in the Futura lineage, which is the Bauhaus typographic instinct), Archivo for reading. Fonts load from Google Fonts; if that fails the page falls back to Futura/Century Gothic and still reads correctly.
+- **The marker rule** is the repeated motif: an orange circle, a navy bar, a label, and a black square. Circle, bar, square — the Bauhaus primitives doing structural work rather than decoration. Every label on one is a real fact.
 - Responsive down to phone width, keyboard-navigable, visible focus rings, and `prefers-reduced-motion` respected.
 
 ## File map
